@@ -1,4 +1,4 @@
-using FitSeries
+using FitCurve
 
 function MyFunction(x)
 	r=rand(1)[1] #Random number between 0 and 1
@@ -16,7 +16,7 @@ end
 println("fitting the data")
 nocoeffs=5
 fitType="Chebyshev"
-f=FitSeries.fit(x,y,fitType,nocoeffs)
+f=FitCurve.fit(x,y,fitType,nocoeffs)
 
 println("evaluating interpolated func")
 result = zeros(n)

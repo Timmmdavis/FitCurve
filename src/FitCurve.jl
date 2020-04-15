@@ -1,6 +1,6 @@
-module Fit
+module FitCurve
 
-using ApproxFun, Plots
+using ApproxFun
 
 
 function fit(x,y,fitType,nocoeffs)
@@ -13,11 +13,11 @@ function fit(x,y,fitType,nocoeffs)
 
 n = length(x) #number of points
 m = nocoeffs;
-if fitType="Taylor" 
+if "$fitType"=="Taylor" 
 	S = Taylor(minimum(x)..maximum(x));
-if fitType="Chebyshev"
+elseif "$fitType"=="Chebyshev"
 	S = Chebyshev(minimum(x)..maximum(x));
-elseif fitType="Fourier"
+elseif "$fitType"=="Fourier"
 	S = Fourier(minimum(x)..maximum(x));
 end
 V = Array{Float64}(undef,n,m);
@@ -28,5 +28,9 @@ f = Fun(S,V\y);
 
 #returns f where evaluating this: y_approx=f[x]
 return f
+
+end
+
+#export fit
 
 end
