@@ -1,5 +1,5 @@
 # FitCurve
-A stripped down Julia version of MATLAB's fit function. 
+A stripped down Julia version of MATLAB's fit function. This is simply the help of ApproxFun.jl "Using ApproxFun for “manual” interpolation" placed inside a function that acts like MATLAB's function 'fit'. 
 Fitting methods: Chebyshev, Taylor and Fourier series. 
 
 ![FittingResult](https://github.com/Timmmdavis/fit/blob/master/Result.png) 
@@ -16,3 +16,4 @@ f=FitSeries.fit(x,y,fitType,nocoeffs)
 y_approx = f(pi);
 ```
 For a more detailed file see 'Example.jl'
+
