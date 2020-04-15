@@ -1,4 +1,4 @@
-# FitSeries
+# FitCurve
 A stripped down Julia version of MATLAB's fit function. 
 Fitting methods: Chebyshev, Taylor and Fourier series. 
 
