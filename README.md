@@ -14,3 +14,4 @@ f=FitSeries.fit(x,y,fitType,nocoeffs)
 #Check approximation at certain x location within interval (pi)
 y_approx = f(pi);
 ```
+For a more detailed file see 'Example.jl'
