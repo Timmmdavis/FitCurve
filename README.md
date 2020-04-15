@@ -1,5 +1,6 @@
 # FitSeries
-A stripped down Julia version of MATLAB's fit function
+A stripped down Julia version of MATLAB's fit function. 
+Fitting methods: Chebyshev, Taylor and Fourier series. 
 
 ![FittingResult](https://github.com/Timmmdavis/fit/blob/master/Result.png) 
 
