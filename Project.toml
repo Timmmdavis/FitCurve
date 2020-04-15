@@ -1,4 +1,4 @@
-name = "fit"
+name = "FitCurve"
 uuid = "f9a3dc4b-96a8-4d59-9c4c-b26d5a3996b3"
 authors = ["Tim Davis <davis@gfz-potsdam.de>"]
 version = "0.1.0"
